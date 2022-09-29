@@ -84,11 +84,3 @@ class ReplyBot:
         reply_submit = driver.find_element(By.CSS_SELECTOR, 'form[method="POST"] button[type="submit"]')
         reply_submit.click()
         sleep(4)
-
-
-username = 'casabela_belojardim'
-password = 'Maju0405!'
-post_link = 'CjEklPQuBFV'
-comment_text = 'Obrigado pelo comentário! Venha conhecer nossa loja na Rua João Pessoa, 27 - Calçadão, Centro de Belo Jardim. Funcionamos de Seg à sex das 8hrs às 18hrs e no sábado das 8hrs às 12hrs.'
-
-ReplyBot().initialize_crawler(post_link=post_link, username=username, password=password, comment_text=comment_text)
