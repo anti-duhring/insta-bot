@@ -15,6 +15,7 @@ class ReplyBot:
 
         chrome_options = Options()
         chrome_options.add_argument("--headless")
+        chrome_options.add_argument("--log-level=3");
         p = 'chromedriver.exe'
         driver = webdriver.Chrome(p, options=chrome_options)
 
